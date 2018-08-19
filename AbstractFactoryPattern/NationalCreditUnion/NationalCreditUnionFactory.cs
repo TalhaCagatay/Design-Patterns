@@ -12,7 +12,7 @@ namespace NationalCreditUnion
     {
         public NationalSavingsAccount()
         {
-            Console.WriteLine("Returned National Savings Account");
+            Console.WriteLine("Returned National Saving Account");
         }
     }
 
@@ -28,15 +28,14 @@ namespace NationalCreditUnion
     // Concrete Factory 2
     public class NationalCreditUnionFactory : ICreditUnionFactory
     {
-        public override ILoanAccount CreateLoanAccount()
-        {
-            NationalLoanAccount obj = new NationalLoanAccount();
-            return obj;
-        }
-
         public override ISavingsAccount CreateSavingsAccount()
         {
             NationalSavingsAccount obj = new NationalSavingsAccount();
+            return obj;
+        }
+        public override ILoanAccount CreateLoanAccount()
+        {
+            NationalLoanAccount obj = new NationalLoanAccount();
             return obj;
         }
     }

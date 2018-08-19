@@ -13,8 +13,8 @@ namespace AbstractFactory
         static void Main(string[] args)
         {
             List<string> accntNumbers = new List<string> {
-                                        "CITI-456",
-                                        "NATIONAL-987",
+                                        "Sehir-456",
+                                        "Ulusal-987",
                                         "CHASE-222" };
             for (int i = 0; i < accntNumbers.Count; i++)
             {
